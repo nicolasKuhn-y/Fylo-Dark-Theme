@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap");
+
+@import "./variables";
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    background-color: $darkBlue-main;
+}
+body {
+    color: $white;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav,
+.intro-section,
+.signUp {
+    background-color: $darkBlue-IntroAndSignUp;
+}
+
+footer {
+    background-color: $darkBlue-footer;
+}
+
+h1,
+h2,
+h3,
+h4,
+nav > *,
+button,
+a {
+    font-family: "Raleway", sans-serif;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+        color: $white;
+        text-decoration: underline $white;
+    }
+}
+
+p{
+    opacity: 0.9;
+}
+
+
+@media Screen and (min-width: 320px) and (max-width: 768px) {
+
+    h2{
+        font-size: 1.8rem;
+    }
+
+}

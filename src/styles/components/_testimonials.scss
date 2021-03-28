@@ -1,0 +1,58 @@
+@import "../utilities/variables";
+
+.testimonials-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+    padding: 4rem 4rem;
+
+    &::after {
+        content: url(/src/assets/images/bg-quotes.png);
+        position: relative;
+        z-index: -1111;
+        bottom: 14.5rem;
+    }
+
+    .testimonial-row {
+        background-color: $darkBlue-testimonials;
+        padding: 2rem;
+
+        p {
+            max-width: 300px;
+        }
+
+        .imageAndInfo-container {
+            display: flex;
+            flex-flow: row;
+            margin-top: 1.5rem;
+
+            img {
+                width: 10%;
+                border-radius: 10rem;
+            }
+        }
+    }
+}
+
+.CEO-info {
+    margin-left: 0.5rem;
+    width: 50%;
+
+    .CEO-name {
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 0.7rem;
+    }
+}
+
+@media Screen and (min-width: 320px) and (max-width: 768px) {
+
+    .testimonials-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+}

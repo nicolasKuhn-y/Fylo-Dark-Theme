@@ -1,0 +1,32 @@
+.description-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr;
+    row-gap: 5rem;
+    padding: 3rem 0;
+}
+
+.rows {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+        margin: 1rem 0;
+    }
+
+    p {
+        max-width: 350px;
+    }
+}
+
+@media Screen and (min-width: 320px) and (max-width: 768px) {
+
+    .description-section{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+}

@@ -1,0 +1,30 @@
+// PRIMARY COLORS
+
+$darkBlue-IntroAndSignUp: hsl(217, 28%, 15%); 
+$darkBlue-main: hsl(218, 28%, 13%); 
+$darkBlue-footer: hsl(216, 53%, 9%); 
+$darkBlue-testimonials: hsl(219, 30%, 18%); 
+
+// ACCENT
+$cyan: hsl(176, 68%, 64%); 
+$ligthCyan: hsl(176, 68%, 75%);
+$blue: #339ecc; 
+$lightRed: hsl(0, 100%, 63%); 
+//NEUTRAL COLORS
+
+$white: hsl(0, 0%, 100%);
+
+@mixin btnStarted {
+    cursor: pointer;
+    background: $cyan;
+    background: linear-gradient(to left, $blue, $cyan);
+    padding: 1rem 5rem;
+    border-radius: 10rem;
+    border-style: none;
+    color: $white;
+    font-weight: 700;
+
+    &:hover {
+        background: $ligthCyan;
+    }
+}

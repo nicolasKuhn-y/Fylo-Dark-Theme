@@ -1,0 +1,42 @@
+@import "../utilities/variables";
+
+.stayProductive-section {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+
+    .img-container img{
+        max-width: 85%;
+    }
+}
+
+.rigth-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+
+    h2 {
+        max-width: 380px;
+    }
+
+    p {
+        margin: 1rem 0;
+        width: 80%;
+    }
+}
+
+.fyloWorks-a {
+    color: $cyan;
+    text-decoration: underline $cyan;
+    text-underline-position: under;
+    text-underline-offset: 0.5rem;
+}
+
+@media Screen and (min-width: 320px) and (max-width: 768px) {
+
+    .stayProductive-section{
+        flex-flow:column wrap;
+    }
+
+}
