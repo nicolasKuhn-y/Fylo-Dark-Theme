@@ -5,10 +5,10 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 2rem;
-    padding: 4rem 4rem;
+    padding: 2rem 1rem;
 
     &::after {
-        content: url(/src/assets/images/bg-quotes.png);
+        content: url(/Fylo-Dark-Theme/src/assets/images/bg-quotes.png);
         position: relative;
         z-index: -1111;
         bottom: 14.5rem;
@@ -16,10 +16,10 @@
 
     .testimonial-row {
         background-color: $darkBlue-testimonials;
-        padding: 2rem;
+        padding: 1.5rem;
 
         p {
-            max-width: 300px;
+            max-width: 350px;
         }
 
         .imageAndInfo-container {
@@ -49,10 +49,18 @@
 }
 
 @media Screen and (min-width: 320px) and (max-width: 768px) {
-
-    .testimonials-section{
+    .testimonials-section {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+        gap: 2rem 0;
+        margin-top: 4rem;
     }
 
+    .CEO-info {
+        width: 100%;
+    }
+
+    .testimonials-section::after {
+        bottom: 45rem;
+    }
 }

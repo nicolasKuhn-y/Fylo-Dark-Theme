@@ -13,6 +13,7 @@ html {
 body {
   color: white;
   font-size: 14px;
+  line-height: 1.3;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -63,6 +64,9 @@ p {
   h2 {
     font-size: 1.8rem;
   }
+  li {
+    font-size: .8rem;
+  }
 }
 
 .nav-container {
@@ -89,6 +93,22 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 20%;
+}
+
+.nav-container img {
+  width: 8rem;
+}
+
+@media Screen and (min-width: 320px) and (max-width: 768px) {
+  .nav-container {
+    padding: 0;
+  }
+  .nav-container ul {
+    width: 65%;
+  }
+  .nav-container img {
+    width: 5rem;
+  }
 }
 
 .intro-section {
@@ -141,8 +161,16 @@ p {
 }
 
 @media Screen and (min-width: 320px) and (max-width: 768px) {
+  .intro-section {
+    background-image: url("/Fylo-Dark-Theme/src/assets/images/bg-curvy-mobile.svg");
+    margin-top: 1.5rem;
+    padding: 0 1rem 0 1rem;
+  }
   .intro-container img {
     width: 80%;
+  }
+  .intro-container h1 {
+    line-height: 1.6;
   }
 }
 
@@ -188,6 +216,7 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 1rem;
   }
 }
 
@@ -199,10 +228,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 1rem;
 }
 
 .stayProductive-section .img-container img {
@@ -220,6 +246,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 40%;
 }
 
 .rigth-text h2 {
@@ -232,11 +259,14 @@ p {
 }
 
 .fyloWorks-a {
+  display: inline;
   color: #65e2d9;
   -webkit-text-decoration: underline #65e2d9;
           text-decoration: underline #65e2d9;
   text-underline-position: under;
   text-underline-offset: 0.5rem;
+  background-image: url(/Fylo-Dark-Theme/src/assets/images/icon-arrow.svg);
+  background-repeat: no-repeat;
 }
 
 @media Screen and (min-width: 320px) and (max-width: 768px) {
@@ -245,6 +275,15 @@ p {
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
+  }
+  .rigth-text {
+    width: 100%;
+  }
+  .rigth-text p {
+    width: 100%;
+  }
+  .rigth-text h2 {
+    font-size: 1rem;
   }
 }
 
@@ -257,11 +296,11 @@ p {
       grid-template-rows: 1fr;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
-  padding: 4rem 4rem;
+  padding: 2rem 1rem;
 }
 
 .testimonials-section::after {
-  content: url(/src/assets/images/bg-quotes.png);
+  content: url(/Fylo-Dark-Theme/src/assets/images/bg-quotes.png);
   position: relative;
   z-index: -1111;
   bottom: 14.5rem;
@@ -269,11 +308,11 @@ p {
 
 .testimonials-section .testimonial-row {
   background-color: #202a3c;
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .testimonials-section .testimonial-row p {
-  max-width: 300px;
+  max-width: 350px;
 }
 
 .testimonials-section .testimonial-row .imageAndInfo-container {
@@ -311,11 +350,19 @@ p {
         grid-template-columns: 1fr;
     -ms-grid-rows: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem 0;
+    margin-top: 4rem;
+  }
+  .CEO-info {
+    width: 100%;
+  }
+  .testimonials-section::after {
+    bottom: 45rem;
   }
 }
 
 .signUp-container {
-  padding: 5rem 15em;
+  padding: 5rem 20em;
 }
 
 .signUp-container .signUp {
