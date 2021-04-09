@@ -1,0 +1,48 @@
+.main__hero {
+    background-image: url("/Fylo-Dark-Theme/src/assets/images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-color: $darkBlue-IntroAndSignUp;
+}
+
+.hero__centered-content {
+    text-align: center;
+
+    img {
+        max-width: 18rem;
+    }
+
+    .centered-content__text {
+        margin: 1.5rem 1rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .centered-content__btn {
+        @include btnStarted;
+    }
+}
+
+@media only Screen and (min-width: 1024px) {
+    .main__hero {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        background-image: url("/Fylo-Dark-Theme/src/assets/images/bg-curvy-desktop.svg");
+
+        .hero__centered-content {
+            max-width: 50%;
+
+            img {
+                max-width: 35rem;
+            }
+        }
+
+        .centered-content__text {
+            margin: 1.5rem 8rem;
+        }
+    }
+}

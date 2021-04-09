@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0.8rem;
+    background-color: $darkBlue-IntroAndSignUp;
+
+    img {
+        max-width: 5rem;
+    }
+
+    .header__nav {
+        display: flex;
+        width: 55%;
+        justify-content: space-around;
+    }
+}
+
+@media only Screen and (min-width: 1024px) {
+    .header {
+        padding: 2rem 4rem;
+        img {
+            max-width: 8rem;
+        }
+    }
+
+    .header__nav {
+        max-width: 20%;
+    }
+}

@@ -14,62 +14,36 @@ html {
 body {
     color: $white;
     font-size: 14px;
-    line-height: 1.3;
+    line-height: 1.7;
     font-family: "Open Sans", sans-serif;
-}
-
-nav,
-.intro-section,
-.signUp {
-    background-color: $darkBlue-IntroAndSignUp;
-}
-
-footer {
-    background-color: $darkBlue-footer;
 }
 
 h1,
 h2,
 h3,
 h4,
-nav > *,
 button,
 a {
     font-family: "Raleway", sans-serif;
 }
 
-h2{
-    font-size: 2rem;
-}
 
-li {
-    list-style: none;
-}
-
-a {
-    color: $white;
+a:-webkit-any-link {
     text-decoration: none;
-
-    &:hover {
-        color: $white;
-        text-decoration: underline $white;
-    }
+    color: inherit;
 }
 
-p{
+a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+    color: $white;
+}
+
+p {
     opacity: 0.9;
 }
 
-
-@media Screen and (min-width: 320px) and (max-width: 768px) {
-
-    
-    h2{
-        font-size: 1.8rem;
-    }
-
-    li{
-        font-size: .8rem;
-    }
-
+h2{
+    font-size: 1rem;
 }
+
