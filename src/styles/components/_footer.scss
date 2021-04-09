@@ -4,13 +4,56 @@
 
     .footer__logo {
         width: 10rem;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
     }
-
 }
 
+.footer__company-info {
+    display: grid;
+    grid-template-rows: 20% repeat(4, 0.5fr);
+    grid-gap: 1.5rem;
 
+    .wrapper__contact-info {
+        display: flex;
+        align-items: center;
 
-@media only Screen and (min-width: 1024px){
-    
+        p {
+            margin: 0.5rem 0 0 1.5rem;
+        }
+    }
+}
+
+.company-info__lorem {
+    display: flex;
+
+    img {
+        height: 1.1rem;
+        width: 1.1rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.contact-info__ul {
+    display: flex;
+    flex-flow: column;
+
+    a {
+        display: inline;
+        margin-top: 0.8rem;
+    }
+}
+
+.contact-info__social-media {
+    text-align: center;
+
+    i:not(i:nth-child(1)) {
+        margin-left: 1rem;
+    }
+}
+
+@media only Screen and (min-width: 1024px) {
+    .footer__company-info {
+        grid-template-columns: 30% repeat(4, 0.5fr);
+        grid-template-rows: none;
+    }
 }

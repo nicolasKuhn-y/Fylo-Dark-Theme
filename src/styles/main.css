@@ -308,43 +308,43 @@ h2 {
   }
 }
 
-.main__sign-up {
+.wrapper__sign-up {
   background-color: #1c2431;
   text-align: center;
   margin: 1rem;
-  border-radius: 0.2rem;
+  border-radius: 0.5rem;
 }
 
-.main__sign-up p {
+.wrapper__sign-up p {
   display: inline-block;
   margin: 1rem 0;
   max-width: 38.75rem;
 }
 
-.main__sign-up input {
+.wrapper__sign-up input {
   padding: 1rem 3rem;
   border: 0;
   border-radius: 10rem;
   margin: 1.5rem 0;
 }
 
-.main__sign-up input::-webkit-input-placeholder {
+.wrapper__sign-up input::-webkit-input-placeholder {
   opacity: 0.5;
 }
 
-.main__sign-up input:-ms-input-placeholder {
+.wrapper__sign-up input:-ms-input-placeholder {
   opacity: 0.5;
 }
 
-.main__sign-up input::-ms-input-placeholder {
+.wrapper__sign-up input::-ms-input-placeholder {
   opacity: 0.5;
 }
 
-.main__sign-up input::placeholder {
+.wrapper__sign-up input::placeholder {
   opacity: 0.5;
 }
 
-.main__sign-up button {
+.wrapper__sign-up button {
   cursor: pointer;
   background: #65e2d9;
   background: -webkit-gradient(linear, right top, left top, from(#339ecc), to(#65e2d9));
@@ -356,24 +356,24 @@ h2 {
   font-weight: 700;
 }
 
-.main__sign-up button:hover {
+.wrapper__sign-up button:hover {
   background: #94ebe5;
 }
 
 @media only Screen and (min-width: 1024px) {
-  .main__sign-up {
+  .wrapper__sign-up {
     margin: 0 auto;
     max-width: 43.75rem;
     padding: 1.5rem;
   }
-  .main__sign-up h3 {
+  .wrapper__sign-up h3 {
     font-size: 1.5rem;
   }
-  .main__sign-up input {
+  .wrapper__sign-up input {
     width: 60%;
     margin-right: 1rem;
   }
-  .main__sign-up button {
+  .wrapper__sign-up button {
     padding: 1rem 1.5rem;
   }
 }
@@ -385,6 +385,71 @@ h2 {
 
 .footer .footer__logo {
   width: 10rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer__company-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% (0.5fr)[4];
+      grid-template-rows: 20% repeat(4, 0.5fr);
+  grid-gap: 1.5rem;
+}
+
+.footer__company-info .wrapper__contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__company-info .wrapper__contact-info p {
+  margin: 0.5rem 0 0 1.5rem;
+}
+
+.company-info__lorem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.company-info__lorem img {
+  height: 1.1rem;
+  width: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.contact-info__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.contact-info__ul a {
+  display: inline;
+  margin-top: 0.8rem;
+}
+
+.contact-info__social-media {
+  text-align: center;
+}
+
+.contact-info__social-media i:not(i:nth-child(1)) {
+  margin-left: 1rem;
+}
+
+@media only Screen and (min-width: 1024px) {
+  .footer__company-info {
+    -ms-grid-columns: 30% (0.5fr)[4];
+        grid-template-columns: 30% repeat(4, 0.5fr);
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */

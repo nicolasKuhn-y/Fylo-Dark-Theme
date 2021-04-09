@@ -1,8 +1,8 @@
-.main__sign-up {
+.wrapper__sign-up {
     background-color: $darkBlue-IntroAndSignUp;
     text-align: center;
     margin: 1rem;
-    border-radius: 0.2rem;
+    border-radius: 0.5rem;
 
     p {
         display: inline-block;
@@ -27,7 +27,7 @@
 }
 
 @media only Screen and (min-width: 1024px) {
-    .main__sign-up {
+    .wrapper__sign-up {
         margin: 0 auto;
         max-width: 43.75rem;
         padding: 1.5rem;
