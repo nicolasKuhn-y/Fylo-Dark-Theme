@@ -85,8 +85,7 @@ h2 {
 }
 
 .main__hero {
-  background-image: url("/Fylo-Dark-Theme/src/assets/images/bg-curvy-mobile.svg");
-  background-repeat: no-repeat;
+  background-image: url("src/assets/images/bg-curvy-mobile.svg");
   background-position: bottom;
   background-color: #1c2431;
 }
@@ -136,7 +135,7 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-image: url("/Fylo-Dark-Theme/src/assets/images/bg-curvy-desktop.svg");
+    background-image: url("src/assets/images/bg-curvy-desktop.svg");
   }
   .main__hero .hero__centered-content {
     max-width: 50%;
